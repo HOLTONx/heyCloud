@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Create a Event" icon-name="event">
+        <lightning-record-form
+        object-api-name={eventObject}
+        fields={eventFields}
+        onsuccess={handleSubmit}>
+        </lightning-record-form>
+    </lightning-card>
+    <lightning-card title="Add a event participant" icon-name="user">
+        <lightning-record-form
+        object-api-name={participantObject}
+        fields={participantFields}
+        onsuccess={handleSubmit}>
+        </lightning-record-form>
+    </lightning-card>
+    
+</template>
